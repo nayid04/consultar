@@ -1,5 +1,6 @@
 package modelo.casos;
 
+import modelo.Bitacora;
 import modelo.personas.Detective;
 import modelo.personas.Sospechoso;
 
@@ -9,12 +10,13 @@ public class Caso {
     private String descripcion,prioridad,NomClave;
     private Detective detective;
     private Sospechoso sospechoso[];
+    private Bitacora bitacora;
     
     public Caso(){
-        NoCaso = 0;
-        descripcion = "";
-        prioridad = "";
-        NomClave = "";
+        this.NoCaso = 0;
+        this.descripcion = "";
+        this.prioridad = "";
+        this.NomClave = "";
         
         detective = new Detective();
         sospechoso = new Sospechoso[15];
@@ -25,8 +27,15 @@ public class Caso {
     public void setPrioridad(String prioridad){this.prioridad = prioridad;}
     public void setNomClave(String NomClave){this.NomClave = NomClave;}
     public void setDetective(Detective detective){this.detective = detective;}
+    public void setSospechoso(int num,Sospechoso sospechoso){this.sospechoso[num] = sospechoso;}
     
-    public void setSospechosos(byte cantidad){
-        
-    }
+    public int getNoCaso(){return this.NoCaso;}
+    public String getDescripcion(){return this.descripcion;}
+    public String getPrioridad(){return this.prioridad;}
+    public String getNomClave(){return this.NomClave;}
+    public Detective getDetective(){return this.detective;}
+    public Sospechoso getSospechoso(int num){return this.sospechoso[num];}
+    public Bitacora getBitacora(){return this.bitacora;}
+    
+    
 }

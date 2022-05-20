@@ -2,18 +2,18 @@ package modelo;
 
 public class Fecha {
     private byte dia,mes;
-    private int año;
+    private int year;
     
     public Fecha(){
         this.dia = 0;
         this.mes = 0;
-        this.año = 0;
+        this.year = 0;
     }
     
     public void setDia(byte dia){this.dia = dia;}
     public void setMes(byte mes){this.mes = mes;}
-    public void setAño(int año){this.año = año;}
+    public void setYear(int year){this.year = year;}
     public byte getDia(){return dia;}
     public byte getMes(){return mes;}
-    public int getAño(){return año;}
+    public int getYear(){return year;}
 }
