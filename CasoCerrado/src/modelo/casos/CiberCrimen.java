@@ -1,6 +1,6 @@
 package modelo.casos;
 
-public class CiberCrimen {
+public class CiberCrimen extends Caso{
     private String tipo;
     
     public CiberCrimen(){this.tipo = "";}
