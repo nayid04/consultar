@@ -1,6 +1,6 @@
 package modelo.casos;
 
-public class Narcotrafico {
+public class Narcotrafico extends Caso {
     private String region;
     
     public Narcotrafico(){this.region = "";}
